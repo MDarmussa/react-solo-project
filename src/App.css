@@ -71,12 +71,15 @@ img.small {
 button {
   font-size: 0.8rem;
   padding: 0.2rem;
-  margin: 2rem;
   border-radius: 0.5rem;
   border: 0.1rem #404040 solid;
   background-color: #f0c040;
+  font-weight: bolder;
   width: 70%;
   cursor: pointer;
+  align-content: center;
+  margin: 2rem auto;
+  display: block;
 }
 
 button.add {
@@ -147,4 +150,13 @@ height: auto;
 .rowCart {
 display: flex;
 
+}
+
+.mainTitle {
+  color: green;
+  text-align:center;
+  margin: 2rem auto;
+  display: block;
+  font-weight: bolder;
+  font-size: xx-large;
 }

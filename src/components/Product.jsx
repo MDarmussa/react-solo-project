@@ -52,17 +52,19 @@ export default function Product(items) {
     <div className='productDiv'>
       <Card sx={{ maxWidth: 345 }} className='productCard'>
       <CardHeader
-        avatar={
-          <Avatar className='avatarPrice' sx={{ bgcolor: red[500], width: 50, height: 50}} aria-label="recipe" >
+        avatar={ 
+          <Avatar className='avatarPrice' sx={{ bgcolor: red[500], width: 50, height: 50, fontWeight: 'bolder'}} aria-label="recipe" >
              <div className='price'>${product.price}</div>
           </Avatar>
         }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
-        title={product.productName}
+        
+        // action={
+        //   <IconButton aria-label="settings">
+        //     <MoreVertIcon />
+        //   </IconButton>
+        // }
+
+        title=<h2 className='productName'>{product.productName}</h2>
       />
       <CardMedia
         component="img"
