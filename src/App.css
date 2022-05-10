@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Helvetica';
+}
+h1,
+h2,
+h3 {
+  margin: 0.5rem 0;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.2rem;
+}
+h3 {
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainRow {
+ display: flex;
+ justify-content: space-around;
+ grid-column: 1 / -1;
+ flex-wrap: wrap;
+ flex-direction: row;
+ row-gap: 10px;
+ column-gap: 20px; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* .mainRow.center {
   align-items: center;
+  justify-content: center;  
+  
+} */
+
+
+
+.col-1 {
+  flex: 1;
+  color: #f04040;
+
+}
+.col-2 {
+  flex: 2;
+  color: #40c0f0;
+}
+
+.col-11 {
+ color: #f4511e;
+ font-size: larger;
+ 
+}
+
+.block {
+  /* background-color: #e0e0e0; */
+  background-color:antiquewhite;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+}
+.text-right {
+  text-align: right;
+}
+img.small {
+  max-height: 8rem;
+}
+button {
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #404040 solid;
+  background-color: #f0c040;
+  width: 70%;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button.add {
+  background-color: #40c0f0;
+  width: 1.5rem;
+}
+button.remove {
+  background-color: #f04040;
+  width: 1.5rem;
+}
+ /* button.badge {
+   background-color: #f04040;
+   border: none;
+   color: #ffffff;
+   width: 1.5rem;
+ } */
+
+.productDiv {
+ /* height: 600px; */
+ max-height: fit-content;
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.cartIcone {
+  border: none;
+  color: #ffffff;
+  width: 1.5rem;
+  height: auto;   
+  
+}
+
+.buttonIcone {
+color: red;
+font-weight: bolder;
+
+}
+.avatarPrice {
+ width: 200px;
+ height: auto;
+ background-color: #f04040;
+}
+.price {
+font-size: 13px;
+}
+
+.AppBar {
+background-color: #f44336;
+color: #e0e0e0;
+}
+
+.navMenu {
+color: green;
+}
+
+.background {
+width: 100%;
+height: auto;
+}
+
+.cartImage {
+width: 5%;
+height: auto;
+}
+
+
+.rowCart {
+display: flex;
+
 }
