@@ -13,9 +13,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // import Checkout from '../components/checkout/Checkout';
 import Cart from './components/Cart';
-import About from './pages/About';
+import About from './pages/Payment';
 
 import { Fragment } from 'react';
+import Checkout from './components/checkout/Checkout';
+import SignUp from './pages/SignUp';
+import SignInSide from './pages/Signin';
+
 
 
 
@@ -60,13 +64,15 @@ function App() {
             <Fragment>
               <Nav /> 
               <img src="background.jpg" alt="Logo" className='background' />
-              <Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} countCartItems={cartItems.length} />
+              <Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} countCartItems={cartItems.length} Checkout={Checkout} />
               <Main products={products} onAdd={onAdd}></Main>
             </Fragment>
           }
         />
 
         <Route path='about' element={<About />} />
+        <Route path='/login' element={<SignInSide />} />
+        <Route path='/signup' element={<SignUp />} />
 
       </Routes>
     </BrowserRouter>
