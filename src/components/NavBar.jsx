@@ -14,7 +14,7 @@ import ResponsiveDialog from './BasketDialog'; //parent of basketDialog
 
 
 export default function Nav(props) {
-  const {countCartItems} = props;
+  // const {countCartItems} = props;
 
 
   return (
@@ -36,14 +36,14 @@ export default function Nav(props) {
                 )}
              {' '} */}
 
-             {props.countCartItems ? (
+             {/* {props.countCartItems ? (
              <button className='buttonIcone'> {props.countCartItems}
                 <ShoppingCartCheckoutIcon className='cartIcone'></ShoppingCartCheckoutIcon> 
             </button>
              ) : (
               ''
              )}
-            {' '}
+            {' '} */}
 
             {/* <button><ResponsiveDialog /></button> */}
 

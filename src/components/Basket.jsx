@@ -5,6 +5,7 @@ import { CardMedia } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 
+
 export default function Basket(items) {
   const { cartItems, onAdd, onRemove, product } = items; //props are importted from App.js
   const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0); //calculate subtotal. a: accumulate, c:current value
@@ -13,10 +14,19 @@ export default function Basket(items) {
 
   const totalPrice = itemsPrice + taxPrice + shippingPrice;
 
+  const {countCartItems} = items;
+
+
   return (
     <aside className="block col-1">
-      <h2>Cart Items</h2>
-      <div>
+      <h2>Cart Items</h2><br />
+      {items.countCartItems ? (
+                  <h2 className="col-21" color='blue'> Number of Items   ( {items.countCartItems} ) </h2>
+                ) : (
+                  ''
+                )}
+             {' '}
+      <div> <br />
         {items.productName}
         {cartItems.length === 0 && <div>Cart is empty</div>} {/* if the cart empty, add this div message */}
         {cartItems.map((item) => (

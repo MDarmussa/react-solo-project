@@ -47,10 +47,22 @@ a {
   color: #40c0f0;
 }
 
+.col-21 {
+  flex: block;
+  color: #40c0f0;
+}
+
 .col-11 {
  color: #f4511e;
  font-size: larger;
  
+}
+
+.col-14 {
+  display: inline;
+  margin-right: 10px;
+
+
 }
 
 .block {

@@ -55,11 +55,12 @@ function App() {
               cartItems={cartItems}
               onAdd={onAdd}
               onRemove={onRemove}
+              countCartItems={cartItems.length}
             >
           </Basket> 
 
         <div>
-          <Main products={products} onAdd={onAdd}></Main> 
+          <Main products={products} onAdd={onAdd} countCartItems={cartItems.length}>></Main> 
           {/* products={products} is a hook to be able to pass it to another component */}
           {/* pass product to main because main component is responsible to render the data using props */}
             {/* pass onAdd on Main to be able to export it to Main component as a props */}
