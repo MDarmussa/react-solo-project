@@ -4,13 +4,13 @@ import { Button } from 'bootstrap';
 import { CardMedia } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-
+ 
 
 export default function Basket(items) {
   const { cartItems, onAdd, onRemove, product } = items; //props are importted from App.js
   const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0); //calculate subtotal. a: accumulate, c:current value
   const taxPrice = itemsPrice * 0.14; //0.14 is total tax
-  const shippingPrice = itemsPrice > 2000 ? 0 : 20; //if the total price > $2000, the shipping is free, otherwise, it's $20 cost 
+  const shippingPrice = itemsPrice > 500 ? 0 : 20; //if the total price > $2000, the shipping is free, otherwise, it's $20 cost 
 
   const totalPrice = itemsPrice + taxPrice + shippingPrice;
 
@@ -35,7 +35,7 @@ export default function Basket(items) {
             <Stack direction="row" spacing={7}>
               <Avatar 
                 alt={item.productName} src={item.image} className='cartImage'
-                sx={{ width: 80, height: 80 }}
+                sx={{ width: 80, height: 80, boxShadow: 15 }}
                />
             </Stack>
             <div className="col-2">

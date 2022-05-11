@@ -1,14 +1,21 @@
 import './App.css'
 import Nav from './components/NavBar';
-import Main from './components/Main';
 import Basket from './components/Basket';
+import Main from './components/Main';
 import data from './data';
 import { useState } from 'react';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+
 // import ResponsiveDialog from './components/BasketDialog';
 
 // import Checkout from '../components/checkout/Checkout';
 import Cart from './components/Cart';
+import About from './pages/About';
 
+import { Fragment } from 'react';
 
 
 
@@ -45,28 +52,25 @@ function App() {
   };
 
   return (
-    <div className="App">
-        
-          <Nav countCartItems={cartItems.length}></Nav>
-          {/* <Cart /> */}
+    <BrowserRouter>
+      <Routes>
 
-          <img src="background.jpg" alt="Logo" className='background' />
-          <Basket
-              cartItems={cartItems}
-              onAdd={onAdd}
-              onRemove={onRemove}
-              countCartItems={cartItems.length}
-            >
-          </Basket> 
+        <Route path='/' 
+          element = {
+            <Fragment>
+              <Nav /> 
+              <img src="background.jpg" alt="Logo" className='background' />
+              <Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} countCartItems={cartItems.length} />
+              <Main products={products} onAdd={onAdd}></Main>
+            </Fragment>
+          }
+        />
 
-        <div>
-          <Main products={products} onAdd={onAdd} countCartItems={cartItems.length}>></Main> 
-          {/* products={products} is a hook to be able to pass it to another component */}
-          {/* pass product to main because main component is responsible to render the data using props */}
-            {/* pass onAdd on Main to be able to export it to Main component as a props */}
-        </div>
-    </div>
-);
+        <Route path='about' element={<About />} />
+
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;

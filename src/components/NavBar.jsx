@@ -35,30 +35,29 @@ export default function Nav(props) {
                   ''
                 )}
              {' '} */}
-
-             {/* {props.countCartItems ? (
+{/* 
+              {props.countCartItems ? (
              <button className='buttonIcone'> {props.countCartItems}
                 <ShoppingCartCheckoutIcon className='cartIcone'></ShoppingCartCheckoutIcon> 
             </button>
              ) : (
               ''
              )}
-            {' '} */}
+            {' '}  */}
 
             {/* <button><ResponsiveDialog /></button> */}
 
              <a href='/about'>
-              <Button className='navMenu'>About</Button>
+              <Button className="nav-link active" aria-current="page" href="/about">about</Button>
              </a>
 
              <a href='/login' className='navMenu'>
-              <Button className='navMenu'>Login</Button>
-             </a>
-             {/* <Cart /> */}
-             <a href='/cart'>
-              <Button className='navMenu'>Cart</Button>
+              <Button className='navMenu'>login</Button>
              </a>
 
+             {/* <a className="nav-link active" aria-current="page" href="/about">
+                  about
+              </a> */}
             
             </Stack>
         </Toolbar>

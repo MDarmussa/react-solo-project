@@ -64,3 +64,31 @@ function Home() {
 }
 
 export default Home;
+
+
+
+<BrowserRouter>
+      <Routes>
+   
+        <Route path="/" element={<App />} />
+        <Route index element={<Home />} />
+        <Route path="Signlist" element={<SignList />}/>
+        <Route path="Form" element={<Form addForm={addForm} />}/>
+        <Route path="FormSubmission" element={<FormSubmission form={form} />}/> 
+        {/* stored data enters here to send to FormSubmission */}
+      </Routes>
+    </BrowserRouter>
+
+
+
+<BrowserRouter>
+<Routes>
+  <Route path='/' element={<Nav />} />
+  <Route path='/' element={<Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} countCartItems={cartItems.length} />} />
+  <Route path='/' element={<Main products={products} onAdd={onAdd} />} />
+
+  <Route path="about" element={<About />}/>  
+
+</Routes>
+
+</BrowserRouter>
