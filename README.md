@@ -1,3 +1,12 @@
+https://mui.com/material-ui/getting-started/templates/
+
+To Do List:
+add routes for login and signup 
+styling
+add footer
+nav text calor
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

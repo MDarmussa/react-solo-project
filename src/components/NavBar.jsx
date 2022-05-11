@@ -48,11 +48,14 @@ export default function Nav(props) {
             {/* <button><ResponsiveDialog /></button> */}
 
              <a href='/about'>
-              <Button className="nav-link active" aria-current="page" href="/about">about</Button>
+              <Button className="nav-link active" aria-current="page" href="/about"></Button>
              </a>
 
              <a href='/login' className='navMenu'>
               <Button className='navMenu'>login</Button>
+             </a>
+             <a href='/signup' className='navMenu'>
+              <Button className='navMenu'>signup</Button>
              </a>
 
              {/* <a className="nav-link active" aria-current="page" href="/about">

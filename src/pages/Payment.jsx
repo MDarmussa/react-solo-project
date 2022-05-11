@@ -1,11 +1,13 @@
 import React from "react";
+import Checkout from "../components/checkout/Checkout";
 import Nav from "../components/NavBar";
 
 const About = () => {
      return ( 
           <>
                <Nav />
-               <h1>hello about me</h1>
+               <br /><br />
+               <Checkout />
 
           </>
           
