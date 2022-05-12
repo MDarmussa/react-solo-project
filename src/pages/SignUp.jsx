@@ -14,14 +14,13 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import Nav from '../components/NavBar';
-import StickyFooter from '../components/Footer';
 
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="/">
-          WalCart
+      <Link color="inherit" href="https://mui.com/">
+        Your Website
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -50,7 +49,7 @@ export default function SignUp() {
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 20,
+            marginTop: 8,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -123,18 +122,16 @@ export default function SignUp() {
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link href="/login" variant="body2">
+                <Link href="#" variant="body2">
                   Already have an account? Sign in
                 </Link>
               </Grid>
             </Grid>
           </Box>
         </Box>
-        {/* <Copyright sx={{ mt: 5 }} /> */}
-        <br /><br /><br />
+        <Copyright sx={{ mt: 5 }} />
       </Container>
     </ThemeProvider>
-    <StickyFooter />
     </>
   );
 }

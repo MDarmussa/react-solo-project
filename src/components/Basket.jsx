@@ -10,7 +10,6 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-
 export default function Basket(items) {
   const { cartItems, onAdd, onRemove, product } = items; //props are importted from App.js
   const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0); //calculate subtotal. a: accumulate, c:current value
@@ -21,7 +20,7 @@ export default function Basket(items) {
 
 
   const navigate = useNavigate();
-  const goToPaymentPage = () => navigate('/About');
+  const goToPaymentPage = () => navigate('/payment');
 
   return (
     <aside className="block col-1">
@@ -32,6 +31,8 @@ export default function Basket(items) {
                   ''
                 )}
              {' '}
+
+             
       <div> <br />
         {items.productName}
         {cartItems.length === 0 && <div>Cart is empty</div>} {/* if the cart empty, add this div message */}
