@@ -130,8 +130,8 @@ button.remove {
 }
 
 .buttonIcone {
-color: red;
-font-weight: bolder;
+  color: red;
+  font-weight: bolder;
 
 }
 .avatarPrice {
@@ -140,21 +140,22 @@ font-weight: bolder;
  background-color: #f04040;
 }
 .price {
-font-size: 13px;
+  font-size: 18px;
+  /* font-weight: bolder; */
 }
 
 .AppBar {
-background-color: #f44336;
-color: #e0e0e0;
+  background-color: #f44336;
+  color: white;
 }
 
 /* .navMenu {
-color: green;
+color: white;
 } */
 
 .background {
-width: 100%;
-height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .cartImage {
@@ -178,5 +179,22 @@ display: flex;
 }
 
 .paymentMethod {
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+
+}
+
+.foorIcons {
+  color: #ffffff;
+}
+
+.foottypography {
+  color: #ffffff;
+}
+
+.copyright {
   text-align: center;
 }

@@ -39,7 +39,9 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
 }));
 
 
+
 export default function Product(items) {
+
   const [expanded, setExpanded] = React.useState(false);
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -66,6 +68,7 @@ export default function Product(items) {
 
         title=<h2 className='productName'>{product.productName}</h2>
       />
+
       <CardMedia
         component="img"
         height="auto"

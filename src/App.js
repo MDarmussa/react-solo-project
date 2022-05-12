@@ -18,7 +18,12 @@ import About from './pages/Payment';
 import { Fragment } from 'react';
 import Checkout from './components/checkout/Checkout';
 import SignUp from './pages/SignUp';
-import SignInSide from './pages/Signin';
+import SignInSide from './pages/SignIn';
+
+import Copyright from './components/Footer';
+import SeeCode from './pages/Code';
+
+
 
 
 
@@ -66,6 +71,7 @@ function App() {
               <img src="background.jpg" alt="Logo" className='background' />
               <Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} countCartItems={cartItems.length} Checkout={Checkout} />
               <Main products={products} onAdd={onAdd}></Main>
+              <Copyright />
             </Fragment>
           }
         />
@@ -73,6 +79,8 @@ function App() {
         <Route path='about' element={<About />} />
         <Route path='/login' element={<SignInSide />} />
         <Route path='/signup' element={<SignUp />} />
+        <Route path='/SeeCode' element={<SeeCode />} />
+
 
       </Routes>
     </BrowserRouter>

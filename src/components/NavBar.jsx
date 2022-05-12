@@ -5,66 +5,36 @@ import  Toolbar from '@mui/material/Toolbar';
 import HomeIcon from '@mui/icons-material/Home';
 
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
-import ResponsiveDialog from './BasketDialog'; //parent of basketDialog
-
-// import Cart from './components/Cart';
-
-// import Cart from './Cart';
+import SeeCode from '../pages/Code';
 
 
-
-export default function Nav(props) {
-  // const {countCartItems} = props;
-
+export default function Nav() {
+  
 
   return (
-      <AppBar position= 'static'>
-        <Toolbar className="AppBar" >
-          <a href="/" >
-            <HomeIcon sx={{ fontSize: 40 }} color="action" />
-          </a>
-
-          <Typography variant='h6' component='div' sx={{ flexGrow: 1}}>
-            {/* <input color='inherit'></input> */}
-          </Typography>
-            <Stack direction='row' spacing={5} mr={3} > 
-
-                {/* {props.countCartItems ? (
-                  <button className="badge">{props.countCartItems}</button>
-                ) : (
-                  ''
-                )}
-             {' '} */}
-{/* 
-              {props.countCartItems ? (
-             <button className='buttonIcone'> {props.countCartItems}
-                <ShoppingCartCheckoutIcon className='cartIcone'></ShoppingCartCheckoutIcon> 
-            </button>
-             ) : (
-              ''
-             )}
-            {' '}  */}
-
-            {/* <button><ResponsiveDialog /></button> */}
-
-             <a href='/about'>
+    <AppBar position= 'static'>
+      <Toolbar className='AppBar'>
+        <a href="/" >
+          <HomeIcon sx={{ fontSize: 45, color: 'white', ml: 2 }} color="action" />
+        </a>
+        <h1> WalCart </h1>
+        <Typography variant='h6' component='div' sx={{ flexGrow: 1}}></Typography>
+          <Stack direction='row' spacing={5} mr={3} > 
+            <a href='/about'>
               <Button className="nav-link active" aria-current="page" href="/about"></Button>
-             </a>
-
-             <a href='/login' className='navMenu'>
-              <Button className='navMenu'>login</Button>
-             </a>
-             <a href='/signup' className='navMenu'>
-              <Button className='navMenu'>signup</Button>
-             </a>
-
-             {/* <a className="nav-link active" aria-current="page" href="/about">
-                  about
-              </a> */}
-            
-            </Stack>
-        </Toolbar>
-      </AppBar>
+            </a>
+            <a href='/login' className='navMenu'>
+              <Button className='navMenu' sx={{ fontSize: 20, color: 'white' }}>login</Button>
+            </a>
+            <a href='/signup' className='navMenu'>
+              <Button className='navMenu' sx={{ fontSize: 20, color: 'white' }}>signup</Button>
+            </a>
+            <a href='/' className='navMenu'>
+              <Button sx={{ fontSize: 20, color: 'white' }} className='navMenu' onClick={()=> window.open("https://github.com/MDarmussa/react-solo-project", "_blank")}>SeeCode</Button>
+            </a>
+          </Stack>
+      </Toolbar>
+    </AppBar>
 
   
   );
