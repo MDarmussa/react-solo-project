@@ -1,10 +1,18 @@
-https://mui.com/material-ui/getting-started/templates/
-
 To Do List:
 add routes for login and signup 
 styling
 add footer
 nav text calor
+add dialog for the cart as a batton 
+add a cart icone for the counter
+clean up the code
+
+add .99 for each price if possible
+
+Name WalCart
+
+https://mui.com/system/spacing/
+https://mui.com/material-ui/getting-started/templates/
 
 
 # Getting Started with Create React App
