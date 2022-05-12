@@ -52,7 +52,7 @@ export default function Product(items) {
   return (
   <div className='rowProducts'>
     <div className='productDiv'>
-      <Card sx={{ maxWidth: 345, boxShadow: 20  }} className='productCard'>
+      <Card sx={{ maxWidth: 345, boxShadow: 20, mt: 5  }} className='productCard'>
       <CardHeader
         avatar={ 
           <Avatar className='avatarPrice' sx={{ bgcolor: red[500], width: 50, height: 50, fontWeight: 'bolder'}} aria-label="recipe" >

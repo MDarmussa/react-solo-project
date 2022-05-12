@@ -14,6 +14,7 @@ export default function Main(items) {
           <Product key={product.id} product={product} onAdd={onAdd}></Product>
         ))}
       </div>
+      <br /><br /><br />
     </main>
   );
 }

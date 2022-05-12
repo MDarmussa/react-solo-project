@@ -60,6 +60,7 @@ export default function StickyFooter() {
         <Typography variant="body1" className='foottypography'>
              <h2>Help</h2>
         </Typography>
+        <br /> <br />
       </Container>
       <Box
         component="footer"
