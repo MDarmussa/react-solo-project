@@ -13,7 +13,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // import Checkout from '../components/checkout/Checkout';
 import Cart from './components/Cart';
-import About from './pages/Payment';
+import Payment from './pages/Payment';
 
 import { Fragment } from 'react';
 import Checkout from './components/checkout/Checkout';
@@ -76,11 +76,10 @@ function App() {
           }
         />
 
-        <Route path='about' element={<About />} />
+        <Route path='payment' element={<Payment />} />
         <Route path='/login' element={<SignInSide />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/SeeCode' element={<SeeCode />} />
-
 
       </Routes>
     </BrowserRouter>

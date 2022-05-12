@@ -2,7 +2,7 @@ import React from "react";
 import Checkout from "../components/checkout/Checkout";
 import Nav from "../components/NavBar";
 
-const About = () => {
+const Payment = () => {
      return ( 
           <>
                <Nav />
@@ -14,4 +14,4 @@ const About = () => {
       );
 }
  
-export default About;
+export default Payment;
