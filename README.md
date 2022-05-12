@@ -16,19 +16,3 @@ Contributors:
 
 
 
-To Do List:
-add a cart icone for the counter
-clean up the code
-
-
-
-https://mui.com/system/spacing/
-https://mui.com/material-ui/getting-started/templates/
-
-https://mui.com/material-ui/react-drawer/
-
-
-
-https://blog.logrocket.com/create-responsive-navbar-react-css/
-
-

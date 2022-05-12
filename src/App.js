@@ -4,34 +4,18 @@ import Basket from './components/Basket';
 import Main from './components/Main';
 import data from './data';
 import { useState } from 'react';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-
-// import ResponsiveDialog from './components/BasketDialog';
-
-// import Checkout from '../components/checkout/Checkout';
-import Cart from './components/Cart';
 import Payment from './pages/Payment';
-
 import { Fragment } from 'react';
 import Checkout from './components/checkout/Checkout';
 import SignUp from './pages/SignUp';
 import SignInSide from './pages/SignIn';
-
 import Copyright from './components/Footer';
-import SeeCode from './pages/Code';
-
-// import MiniDrawer from './components/TestNav';
-
-
 
 
 function App() {
   const { products } = data;  //  extract products from data
   const [cartItems, setCartItems] = useState([]); //Hook method, useState to pass it in Main and Basket down here to be able to use it as hook in these components
-  
 
   const onAdd = (product) => {
     const exist = cartItems.find((x) => x.id === product.id);
@@ -62,7 +46,6 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-
         <Route path='/' 
           element = {
             <Fragment>
@@ -74,12 +57,9 @@ function App() {
             </Fragment>
           }
         />
-
         <Route path='payment' element={<Payment />} />
         <Route path='/login' element={<SignInSide />} />
         <Route path='/signup' element={<SignUp />} />
-        <Route path='/SeeCode' element={<SeeCode />} />
-
       </Routes>
     </BrowserRouter>
   );

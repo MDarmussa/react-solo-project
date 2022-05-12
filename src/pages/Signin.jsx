@@ -16,20 +16,6 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Nav from '../components/NavBar';
 import StickyFooter from '../components/Footer';
 
-
-function Copyright(props) {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="/">
-        WalCart
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
-
 const theme = createTheme();
 
 export default function SignInSide() {
@@ -104,6 +90,7 @@ export default function SignInSide() {
                 label="Remember me"
               />
               <Button
+                href="/"
                 type="submit"
                 fullWidth
                 variant="contained"
@@ -113,7 +100,7 @@ export default function SignInSide() {
               </Button>
               <Grid container>
                 <Grid item xs>
-                  <Link href="#" variant="body2">
+                  <Link href="#" variant="body2" onClick={alert='Needs Back-end'}>
                     Forgot password?
                   </Link>
                 </Grid>

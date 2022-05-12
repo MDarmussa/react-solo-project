@@ -1,12 +1,8 @@
 import { Drawer, Box, Typography, Button } from "@mui/material";
 import { useState } from 'react';
-// import Basket from "./Basket";
-
 
 function Cart(props) {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false)
-
-
     return ( 
         <>
         <Button
@@ -28,11 +24,8 @@ function Cart(props) {
                     <Typography 
                     variant='h6' 
                     component='div'
-                    >Cart and Total
-                    </Typography>
-                   {/* <Basket /> */}
-
-                   
+                        >Cart and Total
+                    </Typography>    
             </Box>
         </Drawer>
         </>
