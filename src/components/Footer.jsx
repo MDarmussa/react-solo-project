@@ -17,7 +17,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary">
       {'Copyright © '}
-      <Link color="inherit" href="/">
+      <Link color="inherit" href="/" className='walcart'>
         WalCart
       </Link>{' '}
       {new Date().getFullYear()}
@@ -44,9 +44,9 @@ export default function StickyFooter() {
           CONNECT WITH ME
         </Typography>
 
-          <Typography className='foorIcons' >
-               <a href='https://github.com/MDarmussa/react-solo-project' target='_blank'><GitHubIcon sx={{ fontSize: 50, color: 'white' }}/></a>
-               <a href='https://www.linkedin.com/in/mdarmussa/' target='_blank'><LinkedInIcon sx={{ fontSize: 50, color: 'white' }}/></a>
+          <Typography className='foorIcons' sx={{margin: 'auto'}} >
+               <a href='https://github.com/MDarmussa/react-solo-project' target='_blank'><GitHubIcon sx={{ fontSize: 50, color: 'white' }} className='media' /></a>
+               <a href='https://www.linkedin.com/in/mdarmussa/' target='_blank'><LinkedInIcon sx={{ fontSize: 50, color: 'white' }} className='media' /></a>
           </Typography>
 
         <Typography variant="body1" className='foottypography' >
@@ -78,7 +78,7 @@ export default function StickyFooter() {
                Built on <strong>React</strong> and Developed by <strong>Mohammad Darmussa</strong>
           </Typography>
           <Typography variant="body1" fontWeight='bolder'>
-               <a href="/" sx={{ color: blue }} >Privacy & Data</a>
+               <a href="/" sx={{ color: blue }} className='privacy' >Privacy & Data</a>
           </Typography>
           <Copyright />
         </Container>

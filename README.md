@@ -1,9 +1,5 @@
 To Do List:
 add routes for login and signup 
-styling
-add footer
-nav text calor
-add dialog for the cart as a batton 
 add a cart icone for the counter
 clean up the code
 
@@ -14,6 +10,11 @@ Name WalCart
 https://mui.com/system/spacing/
 https://mui.com/material-ui/getting-started/templates/
 
+https://mui.com/material-ui/react-drawer/
+
+https://www.freecodecamp.org/news/how-to-build-a-responsive-navbar-with-a-toggle-menu-using-flexbox-3438e1d08783/
+
+https://blog.logrocket.com/create-responsive-navbar-react-css/
 
 # Getting Started with Create React App
 

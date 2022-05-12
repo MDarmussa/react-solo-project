@@ -21,7 +21,14 @@ a {
 }
 .checkoutt {
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
   
+}
+.checkout:hover {
+  color: #ffffff;
+  font-size: 20px;
 }
 .mainRow {
  display: flex;
@@ -148,6 +155,12 @@ button.remove {
   background-color: #f44336;
   color: white;
 }
+.homeIcone:hover {
+  color: orange;
+}
+.navMenu:hover {
+  color: orange;
+}
 
 /* .navMenu {
 color: white;
@@ -197,4 +210,41 @@ display: flex;
 
 .copyright {
   text-align: center;
+}
+
+.addToCart:hover {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.media:hover {
+  color: orange;
+}
+
+.walcart:hover {
+  color: orange;
+}
+
+.privacy:hover {
+  color: green;
+}
+
+@media screen and (max-width: 380px) {
+  .Typography {
+    font-size: 2px;
+    size: 2px;
+  }
+  .homeIcone {
+    font-size: 2px;
+    size: 2px;
+
+  }
+  .AppBar {
+    font-size: 2px;
+    size: 2px;
+  }
+  .navMenu {
+    font-size: 2px;
+    size: 2px;
+  }
 }
