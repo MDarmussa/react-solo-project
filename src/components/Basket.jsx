@@ -4,9 +4,9 @@ import { Button } from 'bootstrap';
 import { CardMedia } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-import Checkout from './checkout/Checkout'; 
+// import Checkout from './checkout/Checkout'; 
 
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; //to nagigate from basket(checkout btton) to checkout page(payment)
 
 
 
@@ -90,7 +90,7 @@ export default function Basket(items) {
             
             <div className="row">
 
-            <button onClick={goToPaymentPage}>Checkout</button>
+            <button className='checkout' onClick={goToPaymentPage}>Checkout</button>
 
         
             </div>

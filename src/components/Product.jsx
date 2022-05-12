@@ -74,7 +74,7 @@ export default function Product(items) {
         height="auto"
         src={product.image} alt={product.name}
       />
-        <button onClick={() => onAdd(product)}>Add To Cart</button>
+        <button className='addToCart' onClick={() => onAdd(product)}>Add To Cart</button>
 
       <CardActions disableSpacing>
       

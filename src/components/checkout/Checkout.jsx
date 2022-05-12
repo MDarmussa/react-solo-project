@@ -16,6 +16,7 @@ import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import Review from './Review';
 import { makeStyles } from '@mui/material';
+import StickyFooter from '../Footer';
 
 
 function Copyright() {
@@ -69,11 +70,12 @@ export default function Checkout() {
         sx={{
           position: 'relative',
           borderBottom: (t) => `1px solid ${t.palette.divider}`,
+          
         }}
       >
-        <Toolbar>
+        <Toolbar sx={{justifyContent: 'center'}}>
           <Typography variant="h6" color="inherit" noWrap >
-            <h1 className='checkoutt'>Welcome to Our Secure Payment Method</h1>
+            <h1 className='checkoutt' >Welcome to Our Secure Payment Method</h1>
           </Typography>
         </Toolbar>
       </AppBar>
@@ -123,8 +125,9 @@ export default function Checkout() {
             )}
           </React.Fragment>
         </Paper>
-        <Copyright />
+        {/* <Copyright /> */}
       </Container>
+      <StickyFooter />
     </ThemeProvider>
   );
 }

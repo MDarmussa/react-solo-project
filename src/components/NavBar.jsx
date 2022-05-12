@@ -16,7 +16,7 @@ export default function Nav() {
     <AppBar position= 'static'>
       <Toolbar className='AppBar'>
         <a href="/" >
-          <BusinessCenterIcon sx={{ fontSize: 45, color: 'white', ml: 2 }} color="action" />
+          <BusinessCenterIcon className='homeIcone' sx={{ fontSize: 45, color: 'white', ml: 2 }} color="action" />
         </a>
         <h1> WalCart </h1>
         <Typography variant='h6' component='div' sx={{ flexGrow: 1}}></Typography>
