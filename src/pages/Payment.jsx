@@ -8,9 +8,7 @@ const Payment = () => {
                <Nav />
                <br /><br />
                <Checkout />
-
-          </>
-          
+          </>   
       );
 }
  

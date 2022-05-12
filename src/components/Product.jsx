@@ -1,5 +1,4 @@
 // This element to render the products data and show it in the cart, (sibbling of Main.js)
-
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
@@ -12,16 +11,7 @@ import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
-// import FavoriteIcon from '@mui/icons-material/Favorite';
-import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { maxWidth } from '@mui/system';
-
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
-
 
 interface ExpandMoreProps extends IconButtonProps {
   expand: boolean;
@@ -59,12 +49,6 @@ export default function Product(items) {
              <div className='price'>${product.price}</div>
           </Avatar>
         }
-        
-        // action={
-        //   <IconButton aria-label="settings">
-        //     <MoreVertIcon />
-        //   </IconButton>
-        // }
 
         title=<h2 className='productName'>{product.productName}</h2>
       />

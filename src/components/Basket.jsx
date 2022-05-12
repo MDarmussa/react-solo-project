@@ -1,30 +1,23 @@
 // import React from 'react';
-import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
-import { Button } from 'bootstrap';
-import { CardMedia } from '@mui/material';
+
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-// import Checkout from './checkout/Checkout'; 
-
 import { useNavigate } from 'react-router-dom'; //to nagigate from basket(checkout btton) to checkout page(payment)
 
-
-
 export default function Basket(items) {
-  const { cartItems, onAdd, onRemove, product } = items; //props are importted from App.js
+  const { cartItems, onAdd, onRemove } = items; //props are importted from App.js
   const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0); //calculate subtotal. a: accumulate, c:current value
   const taxPrice = itemsPrice * 0.14; //0.14 is total tax
   const shippingPrice = itemsPrice > 500 ? 0 : 20; //if the total price > $2000, the shipping is free, otherwise, it's $20 cost 
   const totalPrice = itemsPrice + taxPrice + shippingPrice;
-  const {countCartItems} = items;
-
-
+  
   const navigate = useNavigate();
   const goToPaymentPage = () => navigate('/payment');
 
   return (
     <aside className="block col-1">
       <h2>Cart Items</h2><br />
+
       {items.countCartItems ? (
                   <h2 className="col-21" color='blue'> Number of Items   ( {items.countCartItems} ) </h2>
                 ) : (
@@ -32,7 +25,6 @@ export default function Basket(items) {
                 )}
              {' '}
 
-             
       <div> <br />
         {items.productName}
         {cartItems.length === 0 && <div>Cart is empty</div>} {/* if the cart empty, add this div message */}
@@ -91,8 +83,6 @@ export default function Basket(items) {
             <div className="row">
 
             <button className='checkout' onClick={goToPaymentPage}>Checkout</button>
-
-        
             </div>
           </>
         )}

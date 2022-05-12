@@ -4,14 +4,9 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
-import { Button } from 'bootstrap';
-
-import { AppBar } from '@mui/material';
-import  Toolbar from '@mui/material/Toolbar';
-
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { blue, green } from '@mui/material/colors';
+import { blue } from '@mui/material/colors';
 
 function Copyright() {
   return (
@@ -45,8 +40,8 @@ export default function StickyFooter() {
         </Typography>
 
           <Typography className='foorIcons' sx={{margin: 'auto'}} >
-               <a href='https://github.com/MDarmussa/react-solo-project' target='_blank'><GitHubIcon sx={{ fontSize: 50, color: 'white' }} className='media' /></a>
-               <a href='https://www.linkedin.com/in/mdarmussa/' target='_blank'><LinkedInIcon sx={{ fontSize: 50, color: 'white' }} className='media' /></a>
+               <a href='https://github.com/MDarmussa/react-solo-project' target='_blank' rel="noreferrer"><GitHubIcon sx={{ fontSize: 50, color: 'white' }} className='media' /></a>
+               <a href='https://www.linkedin.com/in/mdarmussa/' target='_blank' rel="noreferrer"><LinkedInIcon sx={{ fontSize: 50, color: 'white' }} className='media' /></a>
           </Typography>
 
         <Typography variant="body1" className='foottypography' >

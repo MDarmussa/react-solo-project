@@ -40,14 +40,6 @@ a {
  column-gap: 20px; 
 }
 
-/* .mainRow.center {
-  align-items: center;
-  justify-content: center;  
-  
-} */
-
-
-
 .col-1 {
   flex: 1;
   color: #f04040;
@@ -72,12 +64,9 @@ a {
 .col-14 {
   display: inline;
   margin-right: 10px;
-
-
 }
 
 .block {
-  /* background-color: #e0e0e0; */
   background-color:antiquewhite;
   padding: 1rem;
   margin: 0.5rem;
@@ -113,20 +102,11 @@ button.remove {
   background-color: #f04040;
   width: 1.5rem;
 }
- /* button.badge {
-   background-color: #f04040;
-   border: none;
-   color: #ffffff;
-   width: 1.5rem;
- } */
 
 .productDiv {
- /* height: 600px; */
  max-height: fit-content;
  
 }
-
-
 
 .cartIcone {
   border: none;
@@ -148,12 +128,15 @@ button.remove {
 }
 .price {
   font-size: 18px;
-  /* font-weight: bolder; */
 }
 
 .AppBar {
   background-color: #f44336;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
 }
 .homeIcone:hover {
   color: orange;
@@ -161,10 +144,6 @@ button.remove {
 .navMenu:hover {
   color: orange;
 }
-
-/* .navMenu {
-color: white;
-} */
 
 .background {
   width: 100%;
@@ -229,21 +208,10 @@ display: flex;
   color: green;
 }
 
-/* @media screen and (min-width: 390px) {
-  .homeIcone {
-    font-size: 1px;
-    color: aquamarine;
-  }
-  .AppBar {
-    font-size: 1px;
-    size: 1px;
-    color: aquamarine;
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+}
 
-  }
-  .navMenu {
-    font-size: 1px;
-    size: 1px;
-    color: aquamarine;
-
-  }
-} */

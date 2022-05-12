@@ -1,14 +1,10 @@
 import React from 'react';
-// import Basket from './Basket';
 import { AppBar, Stack, Typography, Button } from '@mui/material';
 import  Toolbar from '@mui/material/Toolbar';
 import HomeIcon from '@mui/icons-material/Home';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
-
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 import SeeCode from '../pages/Code';
-
-
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 export default function Nav() {
