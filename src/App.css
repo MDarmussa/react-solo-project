@@ -229,22 +229,21 @@ display: flex;
   color: green;
 }
 
-@media screen and (max-width: 380px) {
-  .Typography {
-    font-size: 2px;
-    size: 2px;
-  }
+/* @media screen and (min-width: 390px) {
   .homeIcone {
-    font-size: 2px;
-    size: 2px;
-
+    font-size: 1px;
+    color: aquamarine;
   }
   .AppBar {
-    font-size: 2px;
-    size: 2px;
+    font-size: 1px;
+    size: 1px;
+    color: aquamarine;
+
   }
   .navMenu {
-    font-size: 2px;
-    size: 2px;
+    font-size: 1px;
+    size: 1px;
+    color: aquamarine;
+
   }
-}
+} */
