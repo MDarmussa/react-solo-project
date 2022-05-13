@@ -215,3 +215,6 @@ display: flex;
   width: 100vw;
 }
 
+.navRight:hover {
+  color: orange;
+}
