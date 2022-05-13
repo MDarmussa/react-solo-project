@@ -24,13 +24,13 @@ export default function Nav() {
                   <Button  aria-current="page" href="/payment"></Button>
                 </a>
                 <a href='/login'>
-                  <Button sx={{ fontSize: 18, color: 'white' }}>login</Button>
+                  <Button className='navRight' sx={{ fontSize: 18, color: 'white' }}>login</Button>
                 </a>
                 <a href='/signup'>
-                  <Button sx={{ fontSize: 18, color: 'white' }}>signup</Button>
+                  <Button className='navRight' sx={{ fontSize: 18, color: 'white' }}>signup</Button>
                 </a>
                 <a href='/'>
-                  <Button sx={{ fontSize: 18, color: 'white' }} onClick={()=> window.open("https://github.com/MDarmussa/react-solo-project", "_blank")}>SeeCode</Button>
+                  <Button className='navRight' sx={{ fontSize: 18, color: 'white' }} onClick={()=> window.open("https://github.com/MDarmussa/react-solo-project", "_blank")}>SeeCode</Button>
                 </a>
               </Stack>
             </div>
