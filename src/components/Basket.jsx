@@ -8,7 +8,7 @@ export default function Basket(items) {
   const { cartItems, onAdd, onRemove } = items; //props are importted from App.js
   const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0); //calculate subtotal. a: accumulate, c:current value
   const taxPrice = itemsPrice * 0.14; //0.14 is total tax
-  const shippingPrice = itemsPrice > 500 ? 0 : 20; //if the total price > $500, the shipping is free, otherwise, it's $20 cost 
+  const shippingPrice = itemsPrice > 99 ? 0 : 20; //if the total price > $500, the shipping is free, otherwise, it's $20 cost 
   const totalPrice = itemsPrice + taxPrice + shippingPrice;
   
   const navigate = useNavigate();
